@@ -12,9 +12,6 @@ export default class App extends Component {
   changeCategory = category => {
     this.setState({ currentCategory: category.categoryName });
   };
-
-
-
   render() {
     let productInfo = { title: 'ProductList' };
     let categoryInfo = { title: 'CategoryList' };

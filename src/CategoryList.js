@@ -8,7 +8,6 @@ export default class CategoryList extends Component {
       { categoryId: 2, categoryName: 'Condiments' },
     ],
   };
-
   render() {
     return (
       <div>
