@@ -10,9 +10,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+  DropdownItem, } from 'reactstrap';
 
 const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +20,7 @@ const Navi = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="/">Northwind App</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -34,11 +32,11 @@ const Navi = (props) => {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Options {this.props.cart.length}
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  Option 1 
                 </DropdownItem>
                 <DropdownItem>
                   Option 2
