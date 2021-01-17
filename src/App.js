@@ -28,9 +28,9 @@ export default class App extends Component {
 
   addToCart = product => {
     let newCart = this.state.cart;
-    var addedItems = newCart.find(c=>c.product.id);
-    if (addedItems){
-      addedItems.quantity+=1;
+    var addedItem = newCart.find(c=>c.product.id);
+    if (addedItem){
+      addedItem.quantity+=1;
     }else{
       newCart.push({product:product,quantity:1})
     }
